@@ -1,4 +1,4 @@
-
+//remove class nav-bar-fixed when screen more then 997px
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip(); 
 });
@@ -16,3 +16,10 @@ $(document).ready(function(){
             });
         });
     
+
+//Vote Button
+//     $(document).ready(function(){
+//     $(".btn-default:first").click(function(){
+//         $(this).button('toggle');
+//     });   
+// });

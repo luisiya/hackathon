@@ -16,46 +16,55 @@
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <script src="js/main.js"></script>
        <link rel = "stylesheet" href = "css/style.css">
-      <!--Import materialize.css-
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+       <link rel="icon" type="image/png" href="img/chat.png" width="20">
 
 
-<!--
-      <!--Import Icons--
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    -->
-
-
-      <title>Forum</title>
+      <title>WebChatGoIt</title>
     </head>
 
 
-    <body>
-      <div class="wrapper">
+<body>
+    <div class="wrapper">
 
 <!--NAV BAR -->
 
       <nav class="navbar navbar-inverse navbar-fixed-top wrapper" id="nav">
           <div class="container-fluid">
-            <div class="navbar-header logo">
-              <a class="navbar-brand" href="#">WebSiteName</a>
+            <div class="navbar-header logo ">
+              <img src="img/chat.png" width="40"><a class="navbar-brand" href="#top">WebChatGoIt</a>
             </div>
             <ul class="nav navbar-nav">
               <li><a href="#">Вопросы</a></li>
               <li><a href="#">Участники</a></li>
               <li><a href="#">Библиотека</a></li>
             </ul>
-            <form class="navbar-form navbar-left">
+            <form class="navbar-form navbar-left" >
                   <div class="form-group">
                     <input type="text" class="form-control" placeholder="Search">
                   </div>
-                  <button type="submit" class="btn btn-default">Найти</button>
+                  <button type="submit" class="btn btn-default btn-sm">Найти</button>
              </form>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#" ><img  src="img/cup.png" width='25' title="Достижения"></a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              <li><a href="#" ><img  src="img/cup.png" width='17' height='20' title="Достижения"></a></li>
+              <li><a href="#">
+
+
+
+              <span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+
+
+
+              <li>
+
+
+
+
+
+              <a href="#"><span class="glyphicon glyphicon-log-in" ></span> Login</a></li>
+
+
             </ul>
+          
           </div>
         </nav>
 
@@ -66,228 +75,479 @@
 
   <!--MAIN PART -->
 
-   <article>
-<ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Все вопросы</a></li>
-    <li><a data-toggle="tab" href="#menu1">Новые  <span class="badge">5</span></a></li>
-    <li><a data-toggle="tab" href="#menu2">Популярные</a></li>
-    <li><a data-toggle="tab" href="#menu3">Конкурсные</a></li>
-   
-    <!--MODAL WINDOW-->
-<div class="fixed-button">
-      <button type="button" class="btn btn-info btn-md right " data-toggle="modal" data-target="#myModal">Задать вопрос</button>
-
-      <!-- Modal -->
-      <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
+   <article id="top">
+          <ul class="nav nav-tabs" >
+              <li class="active"><a data-toggle="tab" href="#home">Все вопросы</a></li>
+              <li><a data-toggle="tab" href="#menu1">Новые  <span class="badge">5</span></a></li>
+              <li><a data-toggle="tab" href="#menu2">Популярные</a></li>
+              <li><a data-toggle="tab" href="#menu3">Конкурсные</a></li>
              
-             <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Пожалуйста, задайте интересующий вопрос:</h4>
-            </div>
-            <div class="modal-body">
+              <!--MODAL WINDOW-->
+          <div class="fixed-button" >
+                <button type="button" class="btn btn-info btn-md right " data-toggle="modal" data-target="#myModal">Задать вопрос</button>
 
-<div class="form-group">
-  <label for="comment">Вопрос:</label>
-  <textarea class="form-control" rows="5" id="comment"></textarea>
-</div>
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
 
-              
-            <div class="modal-footer">
-            <button type="button" class="btn btn-submit" data-dismiss="modal">Отправить</button>
-              <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-            </div>
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                       
+                       <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Пожалуйста, задайте интересующий вопрос:</h4>
+                      </div>
+                      <div class="modal-body">
+
+          <div class="form-group">
+            <label for="comment">Вопрос:</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
           </div>
 
-        </div>
-      </div>
-</div></div>
-  </ul>
+                        
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-submit" data-dismiss="modal">Отправить</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                      </div>
+                    </div>
 
+                  </div>
+                </div>
+          </div></div>
+            </ul>
+</article>
+  <!--ALL questions-->
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
+    
+                    <h3>Все вопросы</h3>      
+                      <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
+                      <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
+                
+                <!-- Left-aligned media object -->
 
-    <!--ALL questions-->
-      <h3>Все вопросы</h3>
+                <div id="grid">
+                   <div class="grid-item">
+                      <span>O<br></span> голосов<br><span>1 </span><br>ответов
+                   </div>
+                   <div class="grid-item">
+                      <img src="img/man.png" style="width:60px">
+                   </div>
+                  <div class="grid-item">
+                      <h4>Максим Иванов</h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae impedit possimus aperiam! Numquam, 
+                      
+                  </div>
+              </div>
+                <hr>
 
-      
-  <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
-  <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
-  
-  <!-- Left-aligned media object -->
+                
+                    <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>  Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
+                    <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
 
-  <div class="media " id="grid">
-  <div class="media-right grid-item center"><span>O<br></span> голосов<br><span>1 </span><br>ответов
-    </div>
-    <div class="media-right grid-item">
-      <img src="img/man.png" class="media-object" style="width:60px">
-    </div>
-    <div class="media-body grid-item">
-      <h4 class="media-heading">Максим Иванов</h4>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-  </div>
-  <hr>
-
-
-   
-  <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>  Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
-  <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
-
-<div class="media " id="grid">
-  <div class="media-right grid-item center"><span>O<br></span> голосов<br><span>1 </span><br>ответов
-    </div>
-    <div class="media-right grid-item">
-      <img src="img/student.png" class="media-object" style="width:60px">
-    </div>
-    <div class="media-body grid-item">
-      <h4 class="media-heading">Вадим Кривицкий</h4>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-  </div>
-  <hr>
+              <div id="grid">
+                <div class="grid-item">
+                   <span>O<br></span> голосов<br><span>1 </span><br>ответов
+                </div>
+                  <div class="grid-item">
+                      <img src="img/student.png" class="media-object" style="width:60px">
+                  </div>
+                  <div class="grid-item">
+                        <h4>Вадим Кривицкий</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </div>
+              </div>
+                <hr>
 
 
-   
-  <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>  Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
-  <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
+                 
+                <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>  Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
+                <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
 
-<div class="media " id="grid">
-  <div class="media-right grid-item center"><span>O<br></span> голосов<br><span>1 </span><br>ответов
-    </div>
-    <div class="media-right grid-item">
-      <img src="img/boy.png" class="media-object" style="width:60px">
-    </div>
-    <div class="media-body grid-item">
-      <h4 class="media-heading">Игорь Порошенко</h4>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-  </div>
-  <hr>
-
-
-   
-  <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>  Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
-  <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
+              <div id="grid">
+                <div class="grid-item">
+                   <span>O<br></span> голосов<br><span>3 </span><br>ответов
+                </div>
+                  <div class="grid-item">
+                     <img src="img/boy.png" class="media-object" style="width:60px">
+                  </div>
+                  <div class="grid-item">
+                        <h4>Игорь Порошенко</h4>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+              </div>
+                <hr>
 
 
+                 
+                <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>  Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
+                <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
+                
+                <div id="grid">
+                <div class="grid-item">
+                   <span>O<br></span> голосов<br><span>2 </span><br>ответов
+                </div>
+                  <div class="grid-item">
+                     <img src="img/girl.png" class="media-object" style="width:60px">
+                  </div>
+                  <div class="grid-item">
+                        <h4 >Игорь Порошенко</h4>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+              </div>
+                <hr>
+
+                  
+                      <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
+                      <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
+                
+                <!-- Left-aligned media object -->
+
+                <div id="grid">
+                   <div class="grid-item">
+                      <span>O<br></span> голосов<br><span>1 </span><br>ответов
+                   </div>
+                   <div class="grid-item">
+                      <img src="img/man.png" style="width:60px">
+                   </div>
+                  <div class="grid-item">
+                      <h4 >Максим Иванов</h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae impedit possimus aperiam! Numquam, 
+                      
+                  </div>
+              </div>
+                <hr>
 
 
-
-
- 
-  </section>
-  <section>
-    <h2>
-      Grid 3 x 3. v2
-    </h2>
-     <div class="example-code">
-      <pre>
-  <code>
-    grid-template-columns: 150px 1fr auto;  /* three columns */
-    grid-template-rows: 50px auto 50px; /* three rows  */</code>
-      </pre>
-    </div>
-    <div id="grid2">
-      <div class="grid-item">grid-item #1</div>
-      <div class="grid-item">grid-item #2</div>
-      <div class="grid-item">grid-item #3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit blanditiis recusandae delectus quos non veniam qui molestiae cum quis quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit blanditiis recusandae delectus quos non veniam qui molestiae cum quis quod.</div>
-      <div class="grid-item">grid-item #4</div>
-      <div class="grid-item">grid-item #5</div>
-      <div class="grid-item">grid-item #6</div>
-      <div class="grid-item">grid-item #7</div>
-      <div class="grid-item">grid-item #8</div>
-      <div class="grid-item">grid-item #9</div>
-    </div>
-
-    <div id="grid3">
-      <div class="grid-item">grid-item #1</div>
-      <div class="grid-item">grid-item #2</div>
-      <div class="grid-item">grid-item #3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit blanditiis recusandae delectus quos non veniam qui molestiae cum quis quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit blanditiis recusandae delectus quos non veniam qui molestiae cum quis quod.</div>
-      <div class="grid-item">grid-item #4</div>
-      <div class="grid-item">grid-item #5</div>
-      <div class="grid-item">grid-item #6</div>
-      <div class="grid-item">grid-item #7</div>
-      <div class="grid-item">grid-item #8</div>
-      <div class="grid-item">grid-item #9</div>
-
-  </section>
-      
     </div>
 
 
   <!--NEW questions-->  
     <div id="menu1" class="tab-pane fade">
-      <h3>Новые</h3>
-      <div id="grid2">
-      <div class="grid-item">grid-item #1</div>
-      <div class="grid-item">grid-item #2</div>
-      <div class="grid-item">grid-item #3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit blanditiis recusandae delectus quos non veniam qui molestiae cum quis quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit blanditiis recusandae delectus quos non veniam qui molestiae cum quis quod.</div>
-      <div class="grid-item">grid-item #4</div>
-      <div class="grid-item">grid-item #5</div>
-      <div class="grid-item">grid-item #6</div>
-      <div class="grid-item">grid-item #7</div>
-      <div class="grid-item">grid-item #8</div>
-      <div class="grid-item">grid-item #9</div>
-    </div>
-  </section>
-  <section>
-    <h2>
-      Grid 3 x 3. v3 <a href="https://www.w3.org/TR/css3-grid-layout/#explicit-grid-shorthand" target="_blank">(the "grid-template" shorthand property)</a>
-    </h2>
-    <div class="example-code">
-      <pre>
-  <code>
-    grid-template: 50px auto 50px / 150px 1fr auto; /* three rows / three columns */</code>
-      </pre>
-    </div>
-      
+                  <h3>Новые</h3>
+
+                  <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
+                    <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
+              
+              <!-- Left-aligned media object -->
+
+              <div id="grid">
+                 <div class="grid-item">
+                    <img src="img/new.png" width="40">
+                 </div>
+                 <div class="grid-item">
+                    <img src="img/girl.png" style="width:60px">
+                 </div>
+                <div class="grid-item">
+                    <h4 >Максим Иванов</h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae impedit possimus aperiam! Numquam, 
+                    
+                </div>
+            </div>
+              <hr>
+
+              
+                  <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>  Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
+                  <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
+
+            <div id="grid">
+              <div class="grid-item">
+                  <img src="img/new.png" width="40">
+              </div>
+                <div class=" grid-item">
+                    <img src="img/student.png" class="media-object" style="width:60px">
+                </div>
+                <div class=" grid-item">
+                      <h4 >Вадим Кривицкий</h4>
+                      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+              <hr>
+
+
+               
+
+              <hr>
+    
     </div>
 
   <!--POPULAR questions-->  
     <div id="menu2" class="tab-pane fade">
       <h3>Популярные</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-    </div>
 
+      <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
+        <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
+  
+  <!-- Left-aligned media object -->
 
-  <!--Сompetition questions-->  
-    <div id="menu3" class="tab-pane fade">
-      <h3>Конкурсные</h3>
-      <div id="grid2">
-      <div class="grid-item">grid-item #1</div>
-      <div class="grid-item">grid-item #2</div>
-      <div class="grid-item">grid-item #3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit blanditiis recusandae delectus quos non veniam qui molestiae cum quis quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit blanditiis recusandae delectus quos non veniam qui molestiae cum quis quod.</div>
-      <div class="grid-item">grid-item #4</div>
-      <div class="grid-item">grid-item #5</div>
-      <div class="grid-item">grid-item #6</div>
-      <div class="grid-item">grid-item #7</div>
-      <div class="grid-item">grid-item #8</div>
-      <div class="grid-item">grid-item #9</div>
+  <div id="grid">
+     <div class="grid-item">
+        <img src="img/top.png" width="40">
+     </div>
+     <div class="grid-item">
+        <img src="img/man.png" style="width:60px">
+     </div>
+    <div class="grid-item">
+        <h4>Максим Иванов</h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae impedit possimus aperiam! Numquam, 
+        
     </div>
-  </section>
-  <section>
-    <h2>
-      Grid 3 x 3. v3 <a href="https://www.w3.org/TR/css3-grid-layout/#explicit-grid-shorthand" target="_blank">(the "grid-template" shorthand property)</a>
-    </h2>
-    <div class="example-code">
-      <pre>
-  <code>
-    grid-template: 50px auto 50px / 150px 1fr auto; /* three rows / three columns */</code>
-      </pre>
-    </div>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    </div>
+</div>
+  <hr>
+
+  
+      <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>  Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
+      <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
+
+<div id="grid">
+  <div class="grid-item">
+      <img src="img/top.png" width="40">
   </div>
-
-
+    <div class="grid-item">
+        <img src="img/student.png" class="media-object" style="width:60px">
+    </div>
+    <div class="grid-item">
+          <h4 >Вадим Кривицкий</h4>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+</div>
+  <hr>
 
 
    
-</article>
+  <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>  Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
+  <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
+
+<div id="grid">
+  <div class="grid-item">
+      <img src="img/top.png" width="40">
+  </div>
+    <div class="grid-item">
+       <img src="img/boy.png" class="media-object" style="width:60px">
+    </div>
+    <div class=" grid-item">
+          <h4 >Игорь Порошенко</h4>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+</div>
+  <hr>
+
+
+   
+  <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>  Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
+  <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
+  
+  <div id="grid">
+  <div class="grid-item">
+      <img src="img/top.png" width="40">
+  </div>
+    <div class="grid-item">
+       <img src="img/girl.png" class="media-object" style="width:60px">
+    </div>
+    <div class="grid-item">
+          <h4>Игорь Порошенко</h4>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </div>
+</div>
+  <hr>
+
+    
+     
+  </div>
+
+
+  <!--Сompetition questions-->  
+
+
+    <div id="menu3" class="tab-pane fade">
+
+  
+      <h3>Конкурсные</h3>
+
+
+<!--Quetion #1-->
+
+           <h4>Участник №1</h4>
+           <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
+            <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
+      
+  <!-- Left-aligned media object -->
+
+  <div id="grid-competition">
+     <div class="grid-item">
+
+        <img src="img/heart.png" width="50"><span class="counter">18</span><br>
+     </div>
+     <div class="grid-item">
+        <img src="img/man.png" style="width:60px">
+     </div>
+      <div class="grid-item">
+        <h5>Максим Иванов</h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae impedit possimus aperiam! Numquam, 
+        
+    <!--Progress bar-->
+              <br>
+              <button class="btn btn-default" data-toggle="collapse" data-target="#demo">Голосовать</button>
+
+            <div id="demo" class="collapse">
+
+                    <label class="radio-inline"><input data-target="#demo1" data-toggle="collapse"  type="radio" name="optradio">Супер вопрос</label>
+                    <label class="radio-inline"><input data-target="#demo1" data-toggle="collapse"type="radio" name="optradio">Можно и лучше</label>
+                    <label class="radio-inline"><input data-target="#demo1" data-toggle="collapse"type="radio" name="optradio">Не понравился</label>
+
+              <div id="demo1" class="collapse">
+                 <h5>Результат:</h5>
+                 <div class="progress">
+                     
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                          aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                            40% Супер вопрос
+                          </div>
+                  </div>
+
+                  <div class="progress">
+                          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+                          aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                            50% Можно и лучше
+                          </div>
+                  </div>
+
+                   <div class="progress">
+                          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="20"
+                          aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                            20% Не понравился
+                          </div>
+                  </div>
+
+              </div> 
+         </div>
+     
+     </div>
+  
+      
+    
+ </div>
+
+
+
+<!--Quetion #2-->
+       <h4>Участник №2</h4>
+       <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
+        <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
+  
+  <!-- Left-aligned media object -->
+
+  <div id="grid-competition">
+     <div class="grid-item">
+       <img src="img/heart.png" width="50"><span class="counter">16</span><br>
+     </div>
+     <div class="grid-item">
+        <img src="img/girl.png" style="width:60px">
+     </div>
+      <div class="grid-item">
+        <h5>Мария Коваленко</h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae impedit possimus aperiam! Numquam, 
+        
+    <!--Progress bar-->
+              <br>
+              <button class="btn btn-default" data-toggle="collapse" data-target="#demo3">Голосовать</button>
+
+            <div id="demo3" class="collapse">
+
+                    <label class="radio-inline"><input data-target="#demo2" data-toggle="collapse"  type="radio" name="optradio">Супер вопрос</label>
+                    <label class="radio-inline"><input data-target="#demo2" data-toggle="collapse"type="radio" name="optradio">Можно и лучше</label>
+                    <label class="radio-inline"><input data-target="#demo2" data-toggle="collapse"type="radio" name="optradio">Не понравился</label>
+
+              <div id="demo2" class="collapse">
+                 <h5>Результат:</h5>
+                 <div class="progress">
+                     
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                          aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                            40% Супер вопрос
+                          </div>
+                  </div>
+
+                  <div class="progress">
+                          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="10"
+                          aria-valuemin="0" aria-valuemax="100" style="width:10%">
+                            10% Можно и лучше
+                          </div>
+                  </div>
+
+                   <div class="progress">
+                          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="20"
+                          aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                            20% Не понравился
+                          </div>
+                  </div>
+
+              </div> 
+         </div>
+     
+     </div>
+  
+      
+    
+</div>
+
+
+
+<h4>Участник №3</h4>
+       <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
+        <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
+  
+  <!-- Left-aligned media object -->
+
+  <div id="grid-competition">
+     <div class="grid-item">
+       <img src="img/heart.png" width="50"><span class="counter">12</span><br>
+     </div>
+     <div class="grid-item">
+        <img src="img/student.png" style="width:60px">
+     </div>
+      <div class="grid-item">
+        <h5>Серпутько Анатолий</h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae impedit possimus aperiam! Numquam, 
+        
+    <!--Progress bar-->
+              <br>
+              <button class="btn btn-default" data-toggle="collapse" data-target="#demo5">Голосовать</button>
+
+            <div id="demo5" class="collapse">
+
+                    <label class="radio-inline"><input data-target="#demo6" data-toggle="collapse"  type="radio" name="optradio">Супер вопрос</label>
+                    <label class="radio-inline"><input data-target="#demo6" data-toggle="collapse"type="radio" name="optradio">Можно и лучше</label>
+                    <label class="radio-inline"><input data-target="#demo6" data-toggle="collapse"type="radio" name="optradio">Не понравился</label>
+
+              <div id="demo6" class="collapse">
+                 <h5>Результат:</h5>
+                 <div class="progress">
+                     
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                          aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                            40% Супер вопрос
+                          </div>
+                  </div>
+
+                  <div class="progress">
+                          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="10"
+                          aria-valuemin="0" aria-valuemax="100" style="width:10%">
+                            10% Можно и лучше
+                          </div>
+                  </div>
+
+                   <div class="progress">
+                          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="20"
+                          aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                            20% Не понравился
+                          </div>
+                  </div>
+
+              </div> 
+         </div>
+     
+     </div>
+  
+      
+    
+</div></div>
+
+
+  
 
 <ul class="pagination">
     <li><a href="#">1</a></li>
@@ -302,12 +562,12 @@
 
 <footer class="grid-footer">
     
-     <div class="grid-item">Телефон
+     <div class="grid-item"><span class="glyphicon glyphicon-phone"></span> Телефон
     </div>
 
-    <div class="grid-item">Электронный адрес
+    <div class="grid-item"><span class="glyphicon glyphicon-envelope"></span> Электронный адрес
     </div>
-    <div class="grid-item">Адрес
+    <div class="grid-item"><span class="glyphicon glyphicon-home"></span> Адрес
     </div>
     
 
@@ -318,7 +578,7 @@
 
 
 </div> <!-- WRAPPER-->
-
+</div>
 
 </body>
 </html>
